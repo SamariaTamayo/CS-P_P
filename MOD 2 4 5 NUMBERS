@@ -1,0 +1,32 @@
+import math
+
+# Prompt the user for five numbers
+numbers = []
+for i in range(5):
+    num = float(input(f"Enter number {i+1}: "))
+    numbers.append(num)
+
+# Calculate total (sum)
+total = sum(numbers)
+
+# Calculate average (mean)
+average = total / len(numbers)
+
+# Calculate minimum and maximum
+minimum = min(numbers)
+maximum = max(numbers)
+
+# Calculate range (maximum - minimum)
+range_value = maximum - minimum
+
+# Calculate standard deviation
+variance = sum((x - average) ** 2 for x in numbers) / len(numbers)
+standard_deviation = math.sqrt(variance)
+
+# Output the results
+print(f"Total: {total}")
+print(f"Average: {average:.2f}")
+print(f"Minimum: {minimum}")
+print(f"Maximum: {maximum}")
+print(f"Range: {range_value}")
+print(f"Standard Deviation: {standard_deviation:.2f}")
