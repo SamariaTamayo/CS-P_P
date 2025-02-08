@@ -1,0 +1,113 @@
+# FIRST PROB
+#Comparison with Mutable Sequences
+my_list = [1,2,3]
+my_list[0] = "a"
+#print (my_list)
+
+ # replace(), •split(), and -join()
+phrase = "banana"
+new_phrase = phrase. replace("na", "NA")
+#print (new_phrase)
+phrase2 = "Hello my name is Samaria T"
+new_phrase2 = phrase2split(" ")
+#print(new_phrase2)
+
+#print (new_phrase3)
+
+# print() end & sep keyword args
+
+
+#SEC PROB
+# Prompt the user for their name and age
+name = input("What is your name? ")
+age = int(input("How old are you? "))
+
+# Calculate the age next year
+next_year_age = age + 1
+
+# Use string methods to manipulate the string (example: capitalize name and split it)
+name = name.capitalize()  # Capitalize the first letter of the name
+
+# Create a sentence using string concatenation
+sentence = "Hello, " + name + "! You are " + str(age) + " years old. Next year, you will be " + str(next_year_age) + " years old."
+
+# Use .split() to turn the sentence into a list of words
+sentence_words = sentence.split()
+
+# Use .join() to join the list back with a space separator
+formatted_sentence = " ".join(sentence_words)
+
+# Print the sentence using custom separator and end
+print(formatted_sentence, end=".\n")
+
+# THRID PROB
+# Prompt the user for a sentence
+sentence = input("Enter a sentence: ")
+
+# Prompt the user for a word to search for in the sentence
+word = input("Enter a word to search for: ")
+
+# Use .split() to break the sentence into a list of words
+words = sentence.split()
+
+# Check if the word is in the list of words
+found = word in words
+
+# Use .replace() to show a transformation in the sentence for fun (optional)
+sentence_modified = sentence.replace(word, word.upper())
+
+# Print the result using .join() to display the sentence with words joined by spaces
+# Print whether the word was found (True/False)
+print("Word found:", found, end=".\n")
+
+# Print the modified sentence (showing the word in uppercase, if found)
+print("Modified sentence:", sentence_modified, sep=" | ")
+
+# fOURTH PROB
+# Prompt the user for a word
+word = input("Enter a word: ")
+
+# Prompt the user for the first index
+first_index = int(input("Enter the first index: "))
+
+# Prompt the user for the last index
+last_index = int(input("Enter the last index: "))
+
+# Slice the word at the provided indexes
+sliced_word = word[first_index:last_index]
+
+# Use .replace() to show an example transformation (optional)
+sliced_word_modified = sliced_word.replace("a", "A")
+
+# Use .split() to split the sliced word into individual characters (as an example)
+sliced_word_list = list(sliced_word)
+
+# Use .join() to reassemble the sliced word with a custom separator (for demonstration)
+reassembled_sliced_word = "|".join(sliced_word_list)
+
+# Print the sliced word
+print("Sliced word:", sliced_word, end=".\n")
+
+# Print the modified sliced word (e.g., with 'a' replaced by 'A')
+print("Modified sliced word:", sliced_word_modified, sep=" | ")
+
+# Print the reassembled sliced word with "|" separator
+print("Reassembled sliced word:", reassembled_sliced_word, sep=" | ")
+
+#LAST FOR MOD 
+word1 = input("Enter the first word: ")
+word2 = input("Enter the second word: ")
+word3 = input("Enter the third word: ")
+
+# Use .split() to break the words into a list (though not strictly necessary here)
+words = [word1, word2, word3]
+
+# Optionally modify words using .replace() (for example, change lowercase 'a' to uppercase 'A')
+modified_words = [word.replace("a", "A") for word in words]
+
+# Use .join() to combine the words with a '|' separator
+joined_words = "|".join(modified_words)
+
+# Print the joined words with the custom separator and end using print() keyword arguments
+print((joined_words, end=".\n")e here ":-)")
+
