@@ -1,0 +1,30 @@
+# Sample list integers
+numbers = [1, 2, 3, 4, 5, 6, 7, -8, 9, 10, 11, 12]
+
+# create a new list with squared values
+squared_numbers = []
+for num in numbers:
+    squared_numbers.append(num ** 4)
+
+#print new list
+print(squared_numbers)
+
+# Sample list of integers!
+numbers = [11, 55, -420, 120, 1, 88, 14, -47, 18, -17]
+
+#Count positive and negative numbers
+positive_count = sum(1 for num in numbers if num > 0)
+negative_count = sum(1 for num in numbers if num < 0)
+
+#Print the results pov and neg 
+print(f"Positive numbers: {positive_count}")
+print(f"Negative numbers: {negative_count}")
+
+#sample list of strings I guess use fam name
+strings = ["pat", "sam", "milo", "dana", "milo's", "drew", "crusty"]
+
+# Filter strings longer than three characters
+filtered_strings = [s for s in strings if len(s) > 3]
+
+# Print the result
+print(filtered_strings)
