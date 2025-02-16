@@ -1,0 +1,7 @@
+def count_olympic(words):
+    return sum(1 for word in words if word == "Olympic")
+
+# Example usage
+word_list = ["Olympic", "Games", "Olympic", "sports", "Olympic", "athlete"]
+count = count_olympic(word_list)
+print("Count of 'Olympic':", count)
