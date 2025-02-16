@@ -1,0 +1,8 @@
+# Sample list of strings
+strings = ["pat", "sam", "milo", "dana", "milo's", "drew", "crusty"]
+
+# Filter strings longer than three characters
+filtered_strings = [s for s in strings if len(s) > 3]
+
+# Print the result
+print(filtered_strings)
