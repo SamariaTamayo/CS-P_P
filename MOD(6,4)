@@ -1,0 +1,10 @@
+# Sample List of Integers!
+numbers = [11, 55, -420, 120, 1, 88, 14, -47, 18, -17]
+
+#Count positive and negative numbers
+positive_count = sum(1 for num in numbers if num > 0)
+negative_count = sum(1 for num in numbers if num < 0)
+
+#Print the results pov and neg 
+print(f"Positive numbers: {positive_count}")
+print(f"Negative numbers: {negative_count}")
