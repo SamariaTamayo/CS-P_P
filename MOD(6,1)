@@ -1,4 +1,4 @@
-def sum_of_evens(numbers):
+def sum_of_evens(numbers) just use one neg sam dont make it to hard dude:
     return sum(num for num in numbers if num % 2 == 0)
 
 # Example usage
