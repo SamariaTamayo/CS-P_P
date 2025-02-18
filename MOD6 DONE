@@ -4,7 +4,7 @@ numbers = [1, 2, 3, 4, 5, 6, 7, -8, 9, 10, 11, 12]
 # create a new list with squared values
 squared_numbers = []
 for num in numbers:
-    squared_numbers.append(num ** 4)
+    squared_numbers.append(num ** 2)
 
 #print new list
 print(squared_numbers)
