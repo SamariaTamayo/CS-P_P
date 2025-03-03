@@ -1,0 +1,65 @@
+# Create a file with gardening tips
+with open("gardening_tips.txt", "w") as file:
+    file.write("1. Water your plants early in the morning to reduce evaporation.\n")
+    file.write("2. Use compost to enrich the soil and promote plant growth.\n")
+    file.write("3. make sure you make a layout so you know where everything is.\n")
+    file.write("4. Rotate your crops each season to prevent soil depletion everyone always forgets that one.\n")
+
+# Read and print each gardening tip
+with open("gardening_tips.txt", "r") as file:
+    for tip in file:
+        print(tip.strip())
+
+# Hiking Log Program
+
+def log_hike():
+    with open("hiking_log.txt", "a") as file:
+        while True:
+            hike_name = input("Enter the hike name (or press 0 to exit): ")
+            if hike_name == "0":
+                break
+            distance = input("Enter the hike distance in miles: ")
+            file.write(f"{hike_name} - {distance} miles\n")
+
+    print("\nHiking Log:")
+    with open("hiking_log.txt", "r") as file:
+        for entry in file:
+            print(entry.strip())
+
+log_hike()
+
+# Create a text file with Nickelback's "Next Contestant" lyrics
+with open("song_lyrics.txt", "w") as file:
+    file.write("I judge by what she's wearing\n")
+    file.write("Just how many heads I'm tearing off\n")
+    file.write("For staring at my girlfriend\n")
+    file.write("But she's is wearing evrything\n")
+
+# Read the file
+with open("song_lyrics.txt", "r") as file:
+    lyrics = file.read().lower()
+
+# Request 5 words from the user
+word_counts = {}
+for _ in range(5):
+    word = input("Enter a word to count: ").lower()
+    word_counts[word] = lyrics.count(word)
+
+# Print the dictionary with word counts
+print("\nWord Frequency in Lyrics:")
+print(word_counts)
+# Create a poll.txt file with votes
+with open("poll.txt", "w") as file:
+    file.write("yea,nay,yea,yea,nay,yea,nay,nay,yea,nay\n")
+
+# Read the file and count votes
+with open("poll.txt","r") as file:
+    votes = file.read().strip().split(",")
+
+yea_count = votes.count("yea")
+nay_count = votes.count("nay")
+
+#Print the results
+print("Vote Results:")
+print(f"Yea:{yea_count}")
+print(f"Nay:{nay_count}")
